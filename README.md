@@ -1,6 +1,6 @@
-# GSEA
+# LGEA
 
-[NLPCC 2024] The source codes for `GSEA: Global Structure-Aware Graph Neural Networks for Entity Alignment`.
+[Neurocomputing 2025] The source codes for `Local and Global Structure-Aware Contrastive Framework for Entity Alignment`.
 
 ## Getting Started
 
@@ -18,14 +18,14 @@ We use entity alignment benchmark datasets **OpenEA** which can be downloaded fr
 
 You can automatically download corresponding dependencies by following scripts:
 ```
-conda create -n GSEA python=3.6
-conda activate GSEA
-conda install -n GSEA pytorch=1.10.2 torchvision torchaudio cudatoolkit=11.3.1 -c pytorch # change according to your need here
+conda create -n LGEA python=3.6
+conda activate LGEA
+conda install -n LGEA pytorch=1.10.2 torchvision torchaudio cudatoolkit=11.3.1 -c pytorch # change according to your need here
 pip install -r .\requirements.txt
 ```
 
 ### Running
-To run GSEA, please use the following scripts (ps: --task is an argument):
+To run LGEA, please use the following scripts (ps: --task is an argument):
 ```
 python train.py --task en_fr_15k
 python train.py --task en_de_15k
